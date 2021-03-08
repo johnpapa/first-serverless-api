@@ -1,6 +1,6 @@
 # Create Your First Serverless API
 
-This file lists the raw steps to follow when creating your first serverless API endpoints. You will perform these five steps:
+This file lists the raw steps to follow when creating your first serverless API endpoints. You will perform these five steps: 
 
 1. Create your first function using VS Code
 1. Walkthrough the directory structure
