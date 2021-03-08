@@ -48,17 +48,17 @@ Walkthrough the directory structure
 ### Explore the key files
 
 1. Open the folder **first-serverless-api** in VS Code
+1. The **products-get** folder is where the your first function was created
+1. The `function.json` file is where you can configure how your function is triggered and behaves.
+1. The `index.js` file contains the logic for your function.
+1. `sample.dat` is a placeholder file for sample data.
+1. Open the file `.vscode/launch.json` to see your debugging configuration
 1. All files listed in `.funcignore` will not be published to Azure
 1. All files listed in `.gitignore` will be ignored by git
 1. The `host.json` metadata file contains global configuration options that affect all functions for a function app.
 1. The `local.settings.json` file stores app settings, connection strings, and settings used by local development tools.
 1. The `package.json` file is where your npm scripts and npm package dependencies are listed.
 1. The `proxies.json` file is where you can specify endpoints on your function app that are implemented by another resource. Which can be used to split a large API into multiple function apps while still presenting a single API surface.
-1. The **products-get** folder is where the your first function was created
-1. The `function.json` file is where you can configure how your function is triggered and behaves.
-1. The `index.js` file contains the logic for your function.
-1. `sample.dat` is a placeholder file for sample data.
-1. Open the file `.vscode/launch.json` to see your debugging configuration
 
 ## 3 - Update the function
 
@@ -153,10 +153,8 @@ Update the function to format the expiration dates
 ### Modify the function to format the dates
 
 1. Open the `products-get/index.js` file
-1. Change the variable from `products` to `rawProducts` when retrieving the data
-1. Create a new line of code beneath the `const rawProducts`
+1. Create a new line of code beneath the `const products`
 1. Paste the snippet **func-products-format** to format the dates with YYYY-MM-DD in a new array named `products`
-1. Examine the array map function and the spread operator logic briefly
 
 ### Trigger the endpoint
 
