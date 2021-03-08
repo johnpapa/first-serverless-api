@@ -53,7 +53,7 @@ Walkthrough the directory structure
 1. The `host.json` metadata file contains global configuration options that affect all functions for a function app.
 1. The `local.settings.json` file stores app settings, connection strings, and settings used by local development tools.
 1. The `package.json` file is where your npm scripts and npm package dependencies are listed.
-1. The `proxies.json` file is where you can specify endpoints on your function app that are implemented by another resource. Which can be used to split a large API into multiple function apps whule still presenting a single API surface.
+1. The `proxies.json` file is where you can specify endpoints on your function app that are implemented by another resource. Which can be used to split a large API into multiple function apps while still presenting a single API surface.
 1. The **products-get** folder is where the your first function was created
 1. The `function.json` file is where you can configure how your function is triggered and behaves.
 1. The `index.js` file contains the logic for your function.

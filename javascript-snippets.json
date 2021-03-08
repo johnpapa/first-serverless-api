@@ -60,16 +60,12 @@
     "description": "Format the dates in the product functions",
     "body": [
       "// Format the dates",
-      "const products = rawProducts.map((product) => {",
-      "  const expires = format(new Date(product.expires), 'yyyy-MM-dd');",
-      "  return {",
-      "    ...product,",
-      "    expires,",
-      "  };",
+      "products.forEach((product) => {",
+      "  product.expires = format(new Date(product.expires), 'yyyy-MM-dd');",
       "});$0"
     ]
   },
-  "Import Date-Fns and Format": {
+  "Import Date-Fnsand Format": {
     "prefix": "func-products-date-fns",
     "description": "Import date-fns",
     "body": ["const { format } = require('date-fns');", "$0"]
