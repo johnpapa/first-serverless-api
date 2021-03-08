@@ -1,0 +1,77 @@
+{
+  "Product Data": {
+    "prefix": "data-products",
+    "body": [
+      "const data = {",
+      "  products: [",
+      "    {",
+      "      id: 10,",
+      "      name: 'Strawberries',",
+      "      description: '16oz package of fresh organic strawberries',",
+      "      quantity: 1,",
+      "      expires: '7-1-2021',",
+      "    },",
+      "    {",
+      "      id: 20,",
+      "      name: 'Sliced bread',",
+      "      description: 'Loaf of fresh sliced wheat bread',",
+      "      quantity: 1,",
+      "      expires: '8-31-2021',",
+      "    },",
+      "    {",
+      "      id: 30,",
+      "      name: 'Apples',",
+      "      description: 'Bag of 7 fresh McIntosh apples',",
+      "      quantity: 1,",
+      "      expires: '12-25-2021',",
+      "    },",
+      "  ],",
+      "};",
+      "",
+      "const getProducts = () => {",
+      "  return data.products;",
+      "};",
+      "",
+      "module.exports = { getProducts };",
+      "$0"
+    ],
+    "description": "Sample product data and getter function"
+  },
+
+  "Product Function": {
+    "prefix": "func-products",
+    "body": [
+      "const data = require('../product-data');",
+      "",
+      "module.exports = async function (context, req) {",
+      "  try {",
+      "    const products = data.getProducts();",
+      "    context.res.status(200).json(products);",
+      "  } catch (error) {",
+      "    context.res.status(500).send(error);",
+      "  }",
+      "};",
+      "$0"
+    ],
+    "description": "Product HTTP GET Function"
+  },
+  "Product Function - Format Dates": {
+    "prefix": "func-products-format",
+    "description": "Format the dates in the product functions",
+    "body": [
+      "// Format the dates",
+      "const products = rawProducts.map((product) => {",
+      "  const expires = format(new Date(product.expires), 'yyyy-MM-dd');",
+      "  return {",
+      "    ...product,",
+      "    expires,",
+      "  };",
+      "});$0"
+    ]
+  },
+  "Import Date-Fns and Format": {
+    "prefix": "func-products-date-fns",
+    "description": "Import date-fns",
+    "body": ["const { format } = require('date-fns');", "$0"]
+  }
+}
