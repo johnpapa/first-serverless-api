@@ -119,7 +119,7 @@ Debugging a Serverless Application
 
 ### Data Inspection
 
-1. Everythign about debugging is here in the **Run and Debug** view
+1. Everything about debugging is here in the **Run and Debug** view
 1. Explore the variables windows
 1. Explore the Local and Closure lists
 1. Hover over the `products` array, notice how it is undefined
