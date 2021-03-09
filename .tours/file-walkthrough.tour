@@ -1,0 +1,64 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "File Walkthrough",
+  "steps": [
+    {
+      "directory": "products-get",
+      "description": "The **products-get** folder is where the your first function was created.",
+      "title": "function folder"
+    },
+    {
+      "file": "products-get/function.json",
+      "title": "function configuration",
+      "description": "The `function.json` file is where you can configure how your function is triggered and behaves."
+    },
+    {
+      "file": "products-get/index.js",
+      "description": "The `index.js` file contains the logic for your function.",
+      "line": 1,
+      "title": "function logic"
+    },
+    {
+      "file": "products-get/sample.dat",
+      "description": "`sample.dat` is a placeholder file for sample data.",
+      "line": 1,
+      "title": "sample data"
+    },
+    {
+      "file": ".vscode/launch.json",
+      "description": "The `.vscode/launch.json` file contains your debugging configuration.",
+      "line": 1
+    },
+    {
+      "file": ".funcignore",
+      "description": "All files listed in `.funcignore` will not be published to Azure",
+      "line": 1
+    },
+    {
+      "file": ".gitignore",
+      "description": "All files listed in `.gitignore` will be ignored by git",
+      "line": 1
+    },
+    {
+      "file": "host.json",
+      "description": "The `host.json` metadata file contains global configuration options that affect all functions for a function app.",
+      "line": 1
+    },
+    {
+      "file": "local.settings.json",
+      "description": "The `local.settings.json` file stores app settings, connection strings, and settings used by local development tools.",
+      "line": 1
+    },
+    {
+      "file": "package.json",
+      "description": "The `package.json` file is where your npm scripts and npm package dependencies are listed.",
+      "line": 1
+    },
+    {
+      "file": "proxies.json",
+      "description": "The `proxies.json` file is where you can specify endpoints on your function app that are implemented by another resource. Which can be used to split a large API into multiple function apps while still presenting a single API surface.",
+      "line": 1
+    }
+  ],
+  "ref": "main"
+}
