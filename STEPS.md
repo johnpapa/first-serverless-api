@@ -11,7 +11,7 @@ This file lists the raw steps to follow when creating your first serverless API 
 ## Setup
 
 1. Open VS Code
-1. Go to \_git folder
+1. Go to **\_git** folder
 
 ## 1 - Create Your First Function Using VS Code
 

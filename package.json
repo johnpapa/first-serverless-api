@@ -6,8 +6,6 @@
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {
-    "date-fns": "^2.19.0"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
