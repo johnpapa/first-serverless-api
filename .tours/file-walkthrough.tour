@@ -59,6 +59,5 @@
       "description": "The `proxies.json` file is where you can specify endpoints on your function app that are implemented by another resource. Which can be used to split a large API into multiple function apps while still presenting a single API surface.",
       "line": 1
     }
-  ],
-  "ref": "main"
+  ]
 }
